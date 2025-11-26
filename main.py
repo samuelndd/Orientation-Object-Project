@@ -28,6 +28,9 @@ maBiblio.books_rose()
 #CONSIGNE 5 ajouter 20 pages aux livres de Guy de Maupassant
 maBiblio.ajout_20_pages_a_maupassant()
 
+# CONSIGNE 6 emprunter les livres de Victor Hugo
+maBiblio.emprunter_livres_victor_hugo()
+
 # état final
 print(maBiblio)
 

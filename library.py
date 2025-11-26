@@ -161,14 +161,40 @@ class Library:
 
 
 
+    # CONSIGNE 6 : Empruntez les livres écrits par Victor Hugo
+    def emprunter_livres_victor_hugo(self):
+        """
+         Manipulation de méthodes
+        Empruntez les livres écrits par Victor Hugo.
+        """
+        print(" Empruntez les livres écrits par Victor Hugo.")
+        for b in self.__library_l:
+            if b.get_auteur() == "Victor Hugo":
+                # On appelle la méthode emprunter() du livre
+                ok = b.emprunter()
+                print(ok)
+
+
+
 if __name__ == '__main__':
-    print("Test de Library")
+
     Bibliotheque = Library("book_in.json")
+
+    print(" CONSIGNES 1 Et 2")
     print(Bibliotheque)  # Utilise __str__
+
+    print("CONSIGNE 3")
     Bibliotheque.books_3_mots() # consigne 3
+
+    print("CONSIGNE 4 ")
     Bibliotheque.books_rose()  # Affichage consigne 4
+
+    print("CONSIGNE 5 +20 PAGES POUR GUY DE MAUPASSANT ")
     Bibliotheque.ajout_20_pages_a_maupassant()
     print(Bibliotheque)
+
+    print("CONSIGNE 6 EMPRUNT DES LIVRES DE VICTOR HUGO ")
+    Bibliotheque.emprunter_livres_victor_hugo()
 
 
 
