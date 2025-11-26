@@ -4,9 +4,6 @@ import library
 #
 # Votre application se lance à partir d'ici (et de nulle part ailleurs)
 #
-maBiblio = library.Library("book_in.json")
-
-print(maBiblio)  # état initial
 
 # code à développer suivant les consignes
 # par ex. :
@@ -15,6 +12,18 @@ print(maBiblio)  # état initial
 # maBiblio.search_book_between( 1800, 1900 )
 # .......
 
-print(maBiblio)  # état final
+# Création de l'unique instance de Library
+maBiblio = library.Library("book_in.json")
+
+
+# Affiche de l'état initial (consignes 1 et 2)
+print(maBiblio)
+
+#CONSIGNE 3 : affiche des livres aves les titres a 3 mots
+maBiblio.books_3_words()
+
+
+# état final (inchangé, on a juste fait des affichages)
+print(maBiblio)
 
 

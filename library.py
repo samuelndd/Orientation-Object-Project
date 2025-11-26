@@ -17,7 +17,7 @@ class Library:
             # Pour chaque dictionnaire du JSON, on crée un objet Book
             for d in data:
                 # création de l'objet Book à partir des clés du JSON
-                b = book.Book(
+                b = book.Book(          # ICI : on appelle la classe Book
                     d["title"],  # titre
                     d["author"],  # auteur
                     d["publication_year"],  # année de publication
@@ -25,11 +25,11 @@ class Library:
                 )
 
                 # on copie aussi la dispo depuis le JSON
+                # on met à jour la dispo via le setter
                 b.is_available = d["is_available"]
 
                 # on ajoute l'objet Book dans la liste de la bibliothèque
                 self.__library_l.append(b)
-
 
     def __str__(self):
 
@@ -57,10 +57,49 @@ class Library:
 
         return result
 
+    #CONSIGNE 3 : livres dont le titre contient exactement 3 mots
+    def books_3_words(self):
+        """
+        Affiche, en format tabulaire, les livres dont le titre contient
+        exactement 3 mots, triés par ordre alphabétique du titre.
+        Champs : title, author, page_count, publication_year, is_available
+        """
+
+        # Filtrer les livres dont le titre contient exactement 3 mots
+        livres_3_mots = [
+            b for b in self.__library_l
+            if len(b.get_titre().split()) == 3
+        ]
+
+        # Tri alphabétique sur le titre
+        livres_3_mots = sorted(
+            livres_3_mots, key=lambda b: b.get_titre().lower()
+        )
+
+        print("=== Voici les livres avec 3 mots")
+        if not livres_3_mots:
+            print("Aucun livre avec un titre de 3 mots.\n")
+            return
+
+        print(f"{'Titre':<50} {'Auteur':<30} {'Pages':<8} {'Année':<8} {'Disponible':<12}")
+        print("=" * 120)
+
+        # Lignes du tableau
+        for bk in livres_3_mots:
+            statut = "Oui" if bk.get_is_available() else "Non"
+            print(
+                f"{bk.get_titre():<50} "
+                f"{bk.get_auteur():<30} "
+                f"{bk.get_nombre_pages():<8} "
+                f"{bk.get_annee_publication():<8} "
+                f"{statut:<12}"
+            )
 
 
 
 if __name__ == '__main__':
     print("Test de Library")
-    Bibliothèque = Library("book_in.json")
-    print(Bibliothèque)  # Utilise __str__
+    Bibliotheque = Library("book_in.json")
+    print(Bibliotheque)  # Utilise __str__
+    Bibliotheque.books_3_words() # Affichage consigne 3
+
