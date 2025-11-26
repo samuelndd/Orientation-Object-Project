@@ -22,10 +22,15 @@ class Book:
     def get_nombre_pages(self):
         return self.__nombre_pages
 
+    # NEW : setter pour le nombre de pages (utilisé par la consigne 5)
+    def set_nombre_pages(self, nombre_pages):
+        self.__nombre_pages = nombre_pages
+
     def get_is_available(self):
         return self.__is_available
 
-    # Setter pour la dispo (important pour lire le JSON)
+    # Pour se Setter j'avais des eureur que je comprene pas alos je aussi demande a l'ia de l'aides
+    # et sa aides a pour la dispo (important pour lire le JSON)
     def set_is_available(self, disponible: bool):
         self.__is_available = disponible
 
