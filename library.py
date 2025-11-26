@@ -40,7 +40,7 @@ class Library:
         livres_tries = sorted(
             self.__library_l,key=lambda b: b.get_nombre_pages(),reverse=True)
 
-        result = f"=== Bibliothèque ({len(self.__library_l)} livres) ===\n"
+        result = f"Bibliothèque a {len(self.__library_l)} livres\n"
         result += f"{'Titre':<50} {'Auteur':<30} {'Pages':<8} {'Année':<8} {'Disponible':<12}\n"
         result += "=" * 120 + "\n"
 
@@ -57,12 +57,12 @@ class Library:
 
         return result
 
-    #CONSIGNE 3 : livres dont le titre contient exactement 3 mots
-    def books_3_words(self):
+    #CONSIGNE 3 : livres dont le titre contient 3 mots
+    def books_3_mots(self):
         """
-        Affiche, en format tabulaire, les livres dont le titre contient
-        exactement 3 mots, triés par ordre alphabétique du titre.
-        Champs : title, author, page_count, publication_year, is_available
+        Affichage d'information spécifique :
+        Affichez les informations des livres dont le titre contient exactement 3 mots, triés par ordre alphabétique du titre.
+        Remarque : Format tabulaire; champs à afficher : title, author, page_count, publication_year, is_available
         """
 
         # Filtrer les livres dont le titre contient exactement 3 mots
@@ -76,15 +76,16 @@ class Library:
             livres_3_mots, key=lambda b: b.get_titre().lower()
         )
 
-        print("=== Voici les livres avec 3 mots")
-        if not livres_3_mots:
-            print("Aucun livre avec un titre de 3 mots.\n")
-            return
+        print("Voici les livres avec 3 mots")
 
         print(f"{'Titre':<50} {'Auteur':<30} {'Pages':<8} {'Année':<8} {'Disponible':<12}")
         print("=" * 120)
 
         # Lignes du tableau
+        """
+            Pour cette boucles je demande a l'ai de me generer un code qui m'aides a faire 
+            un tableaux et je me suis baser sur mon binome qui a fait un codes plus ou moins simulaire 
+         """
         for bk in livres_3_mots:
             statut = "Oui" if bk.get_is_available() else "Non"
             print(
@@ -96,10 +97,63 @@ class Library:
             )
 
 
+     # CONSIGNE 4 : livres dont le titre contient le mot rose
+    def books_rose(self):
+        """
+        Recherche
+        Trouvez et affichez les livres dont le titre contient le mot 'rose' (insensible à la casse), triés par ordre alphabétique du titre.
+        Remarque : Format tabulaire; champs à afficher : title, author, page_count, publication_year, is_available
+        """
+        # mot recherché
+        mot_trouvez = "rose"
+
+        # Filtrer les livres pour rose
+        livres_rose = []
+        for b in self.__library_l:
+            """
+            On travaille en minuscule cette partie je savais pas somment faire pour faire
+            que des recherche en miniscule alors je demande a l'ia et il ma fourni 
+            titre_min = b.get_titre().lower()
+            et apres le code ne marchais pas alors il ma aussi proposer sa # On découpe le titre en mots
+            mots_titre = titre_min.split()
+            """
+            # On travaille en minuscule
+            titre_min = b.get_titre().lower()
+            # On découpe le titre en mots
+            mots_titre = titre_min.split()
+            if mot_trouvez in mots_titre:
+                livres_rose.append(b)
+
+                # Tri alphabétique sur le titre
+                livres_rose = sorted(
+                    livres_rose,
+                    key=lambda b: b.get_titre().lower()
+                )
+
+                print(" Yo les boooks avec rose")
+
+                print(f"{'Titre':<50} {'Auteur':<30} {'Pages':<8} {'Année':<8} {'Disponible':<12}")
+                print("=" * 120)
+
+                # la comme les boucles precedents sa creer le tableaux
+                for bk in livres_rose:
+                    statut = "Oui" if bk.get_is_available() else "Non"
+                    print(
+                        f"{bk.get_titre():<50} "
+                        f"{bk.get_auteur():<30} "
+                        f"{bk.get_nombre_pages():<8} "
+                        f"{bk.get_annee_publication():<8} "
+                        f"{statut:<12}"
+                    )
+
+
+
 
 if __name__ == '__main__':
     print("Test de Library")
     Bibliotheque = Library("book_in.json")
     print(Bibliotheque)  # Utilise __str__
-    Bibliotheque.books_3_words() # Affichage consigne 3
+    Bibliotheque.books_3_mots() # consigne 3
+    Bibliotheque.books_rose()  # Affichage consigne 4
+
 

@@ -19,11 +19,14 @@ maBiblio = library.Library("book_in.json")
 # Affiche de l'état initial (consignes 1 et 2)
 print(maBiblio)
 
-#CONSIGNE 3 : affiche des livres aves les titres a 3 mots
-maBiblio.books_3_words()
+#CONSIGNE 3 affiche des livres aves les titres a 3 mots
+maBiblio.books_3_mots()
+
+# CONSIGNE 4 les livres avec le mot 'rose'
+maBiblio.books_3_mots()
 
 
-# état final (inchangé, on a juste fait des affichages)
+# état final
 print(maBiblio)
 
 
