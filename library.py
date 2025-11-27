@@ -186,7 +186,7 @@ class Library:
             reverse=True
         )
 
-        # On prend les 5 premiers
+        # les 5 premiers
         big5 = livres_tries[:5]
 
         # On utilise len(b) et on appelle __len__ de Book
@@ -199,6 +199,32 @@ class Library:
         print("-" * 90)
         print(f"le nombre total des pages des 5 livres les plus longs: {total_pages}\n")
 
+
+
+
+    # CONSIGNE 9 : Sauvegarde de la bibliothèque dans un fichier
+    def sauvegarder_bibliotheque(self, fichier="book_out.py"):
+        """
+       Sauvegarde
+        Sauvegardez la bibliothèque, avec les modifications, dans un fichier book_out.py.
+        Fichier à rendre avec le devoir.
+        """
+        book_out = []
+        for b in self.__library_l:
+            (book_out.append
+                ({
+                "title": b.get_titre(),
+                "author": b.get_auteur(),
+                "publication_year": b.get_annee_publication(),
+                "page_count": b.get_nombre_pages(),
+                "is_available": b.get_is_available()
+                }))
+
+        with open(fichier, "w", encoding="utf-8") as f:
+            # On écrit en JSON lisible
+            json.dump(book_out, f, ensure_ascii=False, indent=4)
+
+        print(f"Bibliothèque sauvegardée dans le fichier {fichier}")
 
 
 
@@ -238,6 +264,10 @@ if __name__ == '__main__':
     print("---------------------------------------------------------------------------")
     print("CONSIGNE 7 le nombre total des pages des 5 livres les plus longs")
     Bibliotheque.nbr_total_pages_5_books()
+
+    print("---------------------------------------------------------------------------")
+    print("CONSIGNE 9 le nombre total des pages des 5 livres les plus longs")
+    Bibliotheque.sauvegarder_bibliotheque()
 
 
 
