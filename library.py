@@ -96,8 +96,7 @@ class Library:
                 f"{statut:<12}"
             )
 
-
-     # CONSIGNE 4 : livres avec le titre rose
+     # CONSIGNE 4 livres avec le titre rose
     def books_rose(self):
         """
          Recherche
@@ -159,8 +158,6 @@ class Library:
                 aout_pages = b.get_nombre_pages() + 20
                 b.set_nombre_pages(aout_pages)
 
-
-
     # CONSIGNE 6 : Empruntez les livres écrits par Victor Hugo
     def emprunter_livres_victor_hugo(self):
         """
@@ -174,6 +171,44 @@ class Library:
                 ok = b.emprunter()
                 print(ok)
 
+    # CONSIGNE 7 : nombre total des pages des 5 livres les plus longs
+    def nbr_total_pages_5_books(self):
+        """
+        Manipulation de méthodes d'agrégation :
+        Calcule et affiche le nombre total des pages
+        des 5 livres les plus longs (en nombre de pages)
+        je vais utuliser Utilise len(book) qui appelle Book.__len__.
+        """
+        # On trie les livres du plus long au plus court
+        livres_tries = sorted(
+            self.__library_l,
+            key=lambda b: b.get_nombre_pages(),
+            reverse=True
+        )
+
+        # On prend les 5 premiers
+        big5 = livres_tries[:5]
+
+        # On utilise len(b) et on appelle __len__ de Book
+        total_pages = sum(len(b) for b in big5)
+
+        print(f"{'Titre':<50} {'Auteur':<30} {'Pages':<8}")
+        print("=" * 90)
+        for bk in big5:
+            print(f"{bk.get_titre():<50} {bk.get_auteur():<30} {bk.get_nombre_pages():<8}")
+        print("-" * 90)
+        print(f"le nombre total des pages des 5 livres les plus longs: {total_pages}\n")
+
+
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
@@ -183,18 +218,26 @@ if __name__ == '__main__':
     print(" CONSIGNES 1 Et 2")
     print(Bibliotheque)  # Utilise __str__
 
-    print("CONSIGNE 3")
+    print("---------------------------------------------------------------------------")
+    print("CONSIGNE 3 pour 3 mots")
     Bibliotheque.books_3_mots() # consigne 3
 
-    print("CONSIGNE 4 ")
+    print("---------------------------------------------------------------------------")
+    print("CONSIGNE 4  livres avec le titre rose")
     Bibliotheque.books_rose()  # Affichage consigne 4
 
+    print("---------------------------------------------------------------------------")
     print("CONSIGNE 5 +20 PAGES POUR GUY DE MAUPASSANT ")
     Bibliotheque.ajout_20_pages_a_maupassant()
     print(Bibliotheque)
 
+    print("---------------------------------------------------------------------------")
     print("CONSIGNE 6 EMPRUNT DES LIVRES DE VICTOR HUGO ")
     Bibliotheque.emprunter_livres_victor_hugo()
+
+    print("---------------------------------------------------------------------------")
+    print("CONSIGNE 7 le nombre total des pages des 5 livres les plus longs")
+    Bibliotheque.nbr_total_pages_5_books()
 
 
 

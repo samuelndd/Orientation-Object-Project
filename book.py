@@ -22,7 +22,13 @@ class Book:
     def get_nombre_pages(self):
         return self.__nombre_pages
 
-    # NEW : setter pour le nombre de pages (utilisé par la consigne 5)
+    def __len__(self):
+        """
+        len(book) sert a obtenir le nombre de pages du livre
+        """
+        return self.__nombre_pages
+
+    #setter pour le nombre de pages (utilisé par la consigne 5)
     def set_nombre_pages(self, nombre_pages):
         self.__nombre_pages = nombre_pages
 

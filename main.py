@@ -31,6 +31,9 @@ maBiblio.ajout_20_pages_a_maupassant()
 # CONSIGNE 6 emprunter les livres de Victor Hugo
 maBiblio.emprunter_livres_victor_hugo()
 
+# CONSIGNE 7 Calculez et affichez le nombre total des pages des 5 livres les plus longs
+maBiblio.nbr_total_pages_5_books()
+
 # état final
 print(maBiblio)
 
