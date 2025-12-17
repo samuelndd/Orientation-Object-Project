@@ -1,6 +1,10 @@
 from enclosure import Enclosure
-from animal import Lion, Girafe  # .....
+from animal import Ours, Lion, Girafe   # .....
 from caretaker import Caretaker
+
+import random
+random.seed(0)
+
 
 if __name__ == '__main__':
 
@@ -8,8 +12,9 @@ if __name__ == '__main__':
     enclos1 = Enclosure(f"Zoo du groupe {group_name}")
 
     # Ajout des animaux
-    enclos1.add_animal( Lion("Louis", enclos1) )
-    enclos1.add_animal( Girafe("Aglaé", enclos1) )
+    enclos1.add_animal( Ours("Grizzly", enclos1,) )
+    enclos1.add_animal( Lion("Louis", enclos1,) )
+    enclos1.add_animal( Girafe("Aglaé", enclos1,) )
     # .........
 
     # Un soigneur est engagé, qui s'occupe de l'enclos
