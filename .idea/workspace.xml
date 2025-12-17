@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c664cd0b-60fc-4e18-9d17-53249f1e5295" name="Changes" comment="Poject Orientation Object">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Q53/animal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q53/animal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q53/caretaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q53/caretaker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q53/enclosure.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q53/enclosure.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Q53/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q53/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,41 +47,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for Q51.Q51_test.test_difference.executor": "Run",
-    "Python tests.Python tests for Q51.Q51_test.test_expression3.executor": "Run",
-    "Python tests.Python tests for Q51.Q51_test.test_somme.executor": "Run",
-    "Python tests.Python tests for Q51.Q51_test.test_soustraction.executor": "Run",
-    "Python tests.Python tests in Q51_test.py.executor": "Run",
-    "Python tests.Python tests in Q51_test_bis.py.executor": "Run",
-    "Python tests.Python tests in main.py.executor": "Run",
-    "Python.Q51_exo.executor": "Run",
-    "Python.Q51_exo_bis.executor": "Run",
-    "Python.Q51_test.executor": "Run",
-    "Python.Q51_test_bis.executor": "Run",
-    "Python.animal.executor": "Run",
-    "Python.book.executor": "Run",
-    "Python.caretaker.executor": "Run",
-    "Python.enclosure.executor": "Run",
-    "Python.library.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main (2).executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "jupyter.settings.vcs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for Q51.Q51_test.test_difference.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Q51.Q51_test.test_expression3.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Q51.Q51_test.test_somme.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Q51.Q51_test.test_soustraction.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in Q51_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in Q51_test_bis.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in main.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q51_exo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q51_exo_bis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q51_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q51_test_bis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.animal.executor&quot;: &quot;Run&quot;,
+    &quot;Python.book.executor&quot;: &quot;Run&quot;,
+    &quot;Python.caretaker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enclosure.executor&quot;: &quot;Run&quot;,
+    &quot;Python.library.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;jupyter.settings.vcs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="PythonProject" is-module-sdk="true">
@@ -255,7 +252,8 @@
       <workItem from="1765847949373" duration="187000" />
       <workItem from="1765848149917" duration="2308000" />
       <workItem from="1765879192850" duration="1200000" />
-      <workItem from="1765914906636" duration="23108000" />
+      <workItem from="1765914906636" duration="24982000" />
+      <workItem from="1765964907555" duration="3052000" />
     </task>
     <servers />
   </component>
@@ -287,7 +285,7 @@
     <SUITE FILE_PATH="coverage/PythonProject$book.coverage" NAME="book Coverage Results" MODIFIED="1764188793275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1764239364549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$Q51_test.coverage" NAME="Q51_test Coverage Results" MODIFIED="1761132696700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q51" />
-    <SUITE FILE_PATH="coverage/PythonProject$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1765962433815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />
+    <SUITE FILE_PATH="coverage/PythonProject$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1765974218455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />
     <SUITE FILE_PATH="coverage/PythonProject$Q51_test_bis.coverage" NAME="Q51_test_bis Coverage Results" MODIFIED="1761033405469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1764163937043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q51" />
     <SUITE FILE_PATH="coverage/PythonProject$animal.coverage" NAME="animal Coverage Results" MODIFIED="1765956846773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />

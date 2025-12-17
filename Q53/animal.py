@@ -211,7 +211,7 @@ class Lion(Animal):
 class Serpent(Animal):
     family = "serpent"
     menu = ["viande"]
-    menu_alt = ["pingouin", "koaka", "loup"]
+    menu_alt = ["pingouin", "koala", "loup"]
     satiety_drop = 1
 
     def do_this_six_hours_later(self):
@@ -290,7 +290,7 @@ class Pingouin(Animal):
 
 class Girafe(Animal):
     family = "girafe"
-    menu = ["feuilles", "herbes"]
+    menu = ["feuilles"]
     menu_alt = []
     satiety_drop = 2
 
