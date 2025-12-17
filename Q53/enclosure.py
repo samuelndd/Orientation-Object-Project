@@ -92,7 +92,7 @@ class Enclosure:
         prey = self._find_animal(prey_name)
         if prey is None:
             return
-        print(f"    ALERT: {prey.name} is dead or escaped (sat:{prey.satiety}).")
+        print(f"ALERT: {prey.name} is dead or escaped (sat:{prey.satiety}).")
         self.del_animal(prey.name)
 
     def _find_animal(self, animal_name: str) -> Optional[Animal]:

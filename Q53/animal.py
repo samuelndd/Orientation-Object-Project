@@ -61,7 +61,7 @@ class Animal:
                     out = "mort"
         return out
 
-    def eat(self, food: str, quantity: int) -> None:
+    def eat(self, food: str, quantity: int) :
         """Traite la nourriture apportée par le soigneur."""
         if food in self.menu:
             self._satiety += quantity
@@ -350,4 +350,58 @@ class Koala(Animal):
 # ............
 # ............
 # ............
+
+
+if __name__ == "__main__":
+    class MockEnclos:
+        animal_l = []
+        fence_status = True
+
+        def del_animal(self, n): pass
+
+        def break_fence(self): self.fence_status = False
+
+        def find_prey_for(self, p, f): return None
+
+        def kill_animal(self, n): pass
+
+
+    e = MockEnclos()
+
+    # Tests
+    print("-------TESTS--------\n")
+
+    # Test Lion
+    lion = Lion("Louis", e)
+    lion.eat("viande", 3)
+    assert lion.satiety == 8
+    print(" - Lion a bien manger")
+
+    # Test Elephant
+    elephant = Elephant("Babar", e)
+    elephant.eat("herbes", 2)
+    assert elephant.satiety == 7
+    print(" - Elephant a bien manger")
+
+    # Test Koala
+    koala = Koala("Kiki", e)
+    koala.eat("eucalyptus", 4)
+    assert koala.satiety == 9
+    print(" - Koala a bien manger")
+
+    # Test refus nourriture
+    lion2 = Lion("Louis", e)
+    s = lion2.satiety
+    lion2.eat("herbes", 3)
+    assert lion2.satiety == s
+    print(" - Refus nourriture ")
+
+    # Test statut
+    loup = Loup("Akela", e)
+    s = loup.satiety
+    loup.eat("feuilles", 5)
+    assert loup.satiety == s
+    print(" - Refus nourriture")
+    print("---------------------------------------")
+
 

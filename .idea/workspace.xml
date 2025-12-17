@@ -7,7 +7,7 @@
     <list default="true" id="c664cd0b-60fc-4e18-9d17-53249f1e5295" name="Changes" comment="Poject Orientation Object">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Q53/animal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q53/animal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q53/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q53/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q53/enclosure.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q53/enclosure.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <recent name="C:\Users\samue\OneDrive\Documents\Cours ISFCE\PythonProject\PythonProject\Q51" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (2)">
+  <component name="RunManager" selected="Python.animal">
     <configuration name="animal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -213,10 +213,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.animal" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.caretaker" />
         <item itemvalue="Python.enclosure" />
-        <item itemvalue="Python.animal" />
         <item itemvalue="Python.main (1)" />
       </list>
     </recent_temporary>
@@ -253,7 +253,10 @@
       <workItem from="1765848149917" duration="2308000" />
       <workItem from="1765879192850" duration="1200000" />
       <workItem from="1765914906636" duration="24982000" />
-      <workItem from="1765964907555" duration="3052000" />
+      <workItem from="1765964907555" duration="3439000" />
+      <workItem from="1765995434648" duration="639000" />
+      <workItem from="1765999954967" duration="930000" />
+      <workItem from="1766004570376" duration="6615000" />
     </task>
     <servers />
   </component>
@@ -285,9 +288,9 @@
     <SUITE FILE_PATH="coverage/PythonProject$book.coverage" NAME="book Coverage Results" MODIFIED="1764188793275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1764239364549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$Q51_test.coverage" NAME="Q51_test Coverage Results" MODIFIED="1761132696700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q51" />
-    <SUITE FILE_PATH="coverage/PythonProject$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1765974218455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />
+    <SUITE FILE_PATH="coverage/PythonProject$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1765995464524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />
     <SUITE FILE_PATH="coverage/PythonProject$Q51_test_bis.coverage" NAME="Q51_test_bis Coverage Results" MODIFIED="1761033405469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1764163937043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q51" />
-    <SUITE FILE_PATH="coverage/PythonProject$animal.coverage" NAME="animal Coverage Results" MODIFIED="1765956846773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />
+    <SUITE FILE_PATH="coverage/PythonProject$animal.coverage" NAME="animal Coverage Results" MODIFIED="1766011332045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />
   </component>
 </project>
