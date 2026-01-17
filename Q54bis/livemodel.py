@@ -27,14 +27,13 @@ class Cell(ABC):
     - Elle force les classes enfants à implémenter les mêmes méthodes.
     - Elle simplifie le code : Grid.step() n'a PAS besoin de savoir
       si la cellule est vivante ou morte, il appelle juste next_alive().
+    - Polymorphisme : AliveCell/DeadCell implémentent next_alive()
     """
 
     @property
     @abstractmethod
     def alive(self) -> bool:
-        """
-        Propriété abstraite : chaque type de cellule doit dire si elle est vivante.
-        """
+        """Propriété abstraite : chaque type de cellule doit dire si elle est vivante."""
         raise NotImplementedError
 
     @abstractmethod
@@ -55,7 +54,6 @@ class AliveCell(Cell):
     (oral hérite de Cell)
     Cellule vivante.
     frozen=True => objet immuable : une fois créé, il ne change pas.
-    Avantage : moins de bugs, logique plus propre.
     """
 
     @property
@@ -109,7 +107,10 @@ class CellFactory:
         return AliveCell() if alive else DeadCell()
 
 
-# 3) GRID : composition (la grille contient des cellules)
+# ============================================================
+# 2) GRID : composition (la grille contient des cellules)
+# ============================================================
+
 class Grid:
     """
     Composition : Grid "possède" une matrice de Cell.
@@ -121,29 +122,29 @@ class Grid:
     """
 
     def __init__(self, rows: int, cols: int) -> None:
-        # _rows et _cols sont protégés (convention) : pas publics
-        self._rows = rows
-        self._cols = cols
+        # Attributs privés (consigne d'encapsulation)
+        self.__rows = rows
+        self.__cols = cols
 
         # Matrice 2D (liste de listes) de Cell
         # Tout démarre mort.
-        self._cells: list[list[Cell]] = [
+        self.__cells: list[list[Cell]] = [
             [CellFactory.create(False) for _ in range(cols)]
             for _ in range(rows)
         ]
 
-    #Accesseurs
+    # Accesseurs
     @property
     def rows(self) -> int:
-        """Nombre de lignes"""
-        return self._rows
+        """Nombre de lignes (lecture seule)"""
+        return self.__rows
 
     @property
     def cols(self) -> int:
-        """Nombre de colonnes"""
-        return self._cols
+        """Nombre de colonnes (lecture seule)"""
+        return self.__cols
 
-    # Iterator
+    # Iterator (consigne 4 demandera plus tard un iterator côté Canvas aussi)
     def __iter__(self) -> Iterator[tuple[int, int, Cell]]:
         """
         Iterator : permet de faire
@@ -154,21 +155,21 @@ class Grid:
         - évite de répéter des doubles boucles partout
         - rend le code plus lisible
         """
-        for r in range(self._rows):
-            for c in range(self._cols):
-                yield r, c, self._cells[r][c]
+        for r in range(self.__rows):
+            for c in range(self.__cols):
+                yield r, c, self.__cells[r][c]
 
     # Méthodes publiques
     def get(self, r: int, c: int) -> Cell:
         """Retourne la cellule à (r,c)."""
-        return self._cells[r][c]
+        return self.__cells[r][c]
 
     def set_alive(self, r: int, c: int, alive: bool) -> None:
         """
         Remplace l'objet Cell par un AliveCell ou DeadCell.
         On utilise la Factory pour ne pas dépendre des classes concrètes.
         """
-        self._cells[r][c] = CellFactory.create(alive)
+        self.__cells[r][c] = CellFactory.create(alive)
 
     def toggle(self, r: int, c: int) -> None:
         """
@@ -198,8 +199,8 @@ class Grid:
                     continue
 
                 # Vérification des limites
-                if 0 <= rr < self._rows and 0 <= cc < self._cols:
-                    if self._cells[rr][cc].alive:
+                if 0 <= rr < self.__rows and 0 <= cc < self.__cols:
+                    if self.__cells[rr][cc].alive:
                         count += 1
 
         return count
@@ -207,12 +208,16 @@ class Grid:
     def step(self) -> None:
         """
         Avance d'une génération.
+
+        IMPORTANT :
+        On calcule d'abord dans une matrice temporaire (next_alive_matrix),
+        puis on applique. Sinon, on fausse le comptage des voisins.
         """
 
         # next_alive_matrix[r][c] dira si la cellule sera vivante après step
         next_alive_matrix: list[list[bool]] = [
-            [False for _ in range(self._cols)]
-            for _ in range(self._rows)
+            [False for _ in range(self.__cols)]
+            for _ in range(self.__rows)
         ]
 
         for r, c, cell in self:
@@ -224,12 +229,15 @@ class Grid:
             next_alive_matrix[r][c] = cell.next_alive(n)
 
         # Application : remplacement des cellules (via Factory)
-        for r in range(self._rows):
-            for c in range(self._cols):
-                self._cells[r][c] = CellFactory.create(next_alive_matrix[r][c])
+        for r in range(self.__rows):
+            for c in range(self.__cols):
+                self.__cells[r][c] = CellFactory.create(next_alive_matrix[r][c])
 
 
-# 4) LIVE MODEL : paramètres globaux du jeu (running, vitesse...)
+# ============================================================
+# 3) LIVE MODEL : paramètres globaux du jeu (running, vitesse...)
+# ============================================================
+
 class LiveModel:
     """
     ORAL
@@ -238,28 +246,26 @@ class LiveModel:
     """
 
     def __init__(self, rows: int, cols: int) -> None:
-        self._grid = Grid(rows, cols)
-        self._running = False
-        self._speed_ms = 80
-        self._generation = 0
+        # Attributs privés (consigne)
+        self.__grid = Grid(rows, cols)
+        self.__running = False
+        self.__speed_ms = 80
+        self.__generation = 0
 
-    #ORAL
+    # ORAL : accesseurs
     @property
     def grid(self) -> Grid:
         """Accès à la grille (lecture seule)."""
-        return self._grid
+        return self.__grid
 
-    #ORAL
     @property
     def running(self) -> bool:
-        return self._running
+        return self.__running
 
-    #ORAL
     @property
     def speed_ms(self) -> int:
-        return self._speed_ms
+        return self.__speed_ms
 
-    #ORAL
     @speed_ms.setter
     def speed_ms(self, value: int) -> None:
         """
@@ -268,27 +274,49 @@ class LiveModel:
         """
         if value <= 0:
             raise ValueError("speed_ms doit être > 0")
-        self._speed_ms = value
+        self.__speed_ms = value
 
-    #ORAL
     @property
     def generation(self) -> int:
-        return self._generation
+        return self.__generation
 
     # Méthodes publiques
     def start(self) -> None:
-        self._running = True
+        self.__running = True
 
     def stop(self) -> None:
-        self._running = False
+        self.__running = False
 
     def toggle_cell(self, r: int, c: int) -> None:
-        self._grid.toggle(r, c)
+        self.__grid.toggle(r, c)
 
     def clear(self) -> None:
-        self._grid.clear()
-        self._generation = 0
+        self.__grid.clear()
+        self.__generation = 0
+
+    # CONSIGNE 5 : bouton "Aléa"
+    def randomize(self, density: float = 0.25) -> None:
+        """
+        Initialise la grille :
+        - density=0.25 => ~25% vivantes
+        """
+        import random
+
+        for r, c, _cell in self.__grid:
+            alive = random.random() < density
+            self.__grid.set_alive(r, c, alive)
+
+        self.__generation = 0
+
+    # CONSIGNE 6 : compter les vivantes (console ou GUI)
+    def alive_count(self) -> int:
+        """Retourne le nombre de cellules vivantes."""
+        count = 0
+        for _r, _c, cell in self.__grid:
+            if cell.alive:
+                count += 1
+        return count
 
     def step(self) -> None:
-        self._grid.step()
-        self._generation += 1
+        self.__grid.step()
+        self.__generation += 1
