@@ -5,12 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c664cd0b-60fc-4e18-9d17-53249f1e5295" name="Changes" comment="Poject Orientation Object">
+      <change afterPath="$PROJECT_DIR$/Q54bis/GameOfLife_MvcArchitecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54bis/GameOfLife_procedural.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54bis/MvcGenericArchitecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54bis/MvcSample_oop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54fusion/GameOfLife_MvcArchitecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54fusion/GameOfLife_procedural.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54fusion/MvcGenericArchitecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54fusion/MvcSample_oop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54fusion/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54fusion/livecontroller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54fusion/livecounter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54fusion/livemodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54fusion/liveview.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54fusion/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/GameOfLife_MvcArchitecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/GameOfLife_procedural.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/MvcGenericArchitecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/MvcSample_oop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/livecontroller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/livecounter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/livemodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/liveview.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q54mana-rj11/test_game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Q54bis/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Q54bis/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q54bis/livecontroller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q54bis/livecontroller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q54bis/livecounter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q54bis/livecounter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q54bis/livemodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q54bis/livemodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q54bis/liveview.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q54bis/liveview.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,12 +94,13 @@
     "Python.library.executor": "Run",
     "Python.main (1).executor": "Run",
     "Python.main (2).executor": "Run",
+    "Python.main (3).executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/samue/OneDrive/Documents/Cours ISFCE/PythonProject/PythonProject/Q54bis",
+    "last_opened_file_path": "C:/Users/samue/OneDrive/Documents/Cours ISFCE/PythonProject/PythonProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,13 +120,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\samue\OneDrive\Documents\Cours ISFCE\PythonProject\PythonProject" />
       <recent name="C:\Users\samue\OneDrive\Documents\Cours ISFCE\PythonProject\PythonProject\Q54bis" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\samue\OneDrive\Documents\Cours ISFCE\PythonProject\PythonProject\Q51" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.main (3)">
     <configuration name="GameOfLife_procedural" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -128,52 +151,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MvcSample_oop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q54" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q54/MvcSample_oop.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="animal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q53" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q53/animal.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -189,6 +166,52 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q54bis/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q54mana-rj11" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q54mana-rj11/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q54fusion" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q54fusion/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,11 +245,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.GameOfLife_procedural" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.MvcSample_oop" />
-        <item itemvalue="Python.animal" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +294,10 @@
       <workItem from="1768455322332" duration="1800000" />
       <workItem from="1768486984099" duration="850000" />
       <workItem from="1768496351254" duration="21553000" />
-      <workItem from="1768589845305" duration="16907000" />
+      <workItem from="1768589845305" duration="17717000" />
+      <workItem from="1768689161600" duration="789000" />
+      <workItem from="1768730668063" duration="83000" />
+      <workItem from="1768766612026" duration="6114000" />
     </task>
     <servers />
   </component>
@@ -300,12 +326,13 @@
     <SUITE FILE_PATH="coverage/PythonProject$library.coverage" NAME="library Coverage Results" MODIFIED="1764239190771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$MvcSample_oop.coverage" NAME="MvcSample_oop Coverage Results" MODIFIED="1768498750922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q54" />
     <SUITE FILE_PATH="coverage/PythonProject$caretaker.coverage" NAME="caretaker Coverage Results" MODIFIED="1765956870224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />
+    <SUITE FILE_PATH="coverage/PythonProject$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1768799762270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q54fusion" />
     <SUITE FILE_PATH="coverage/PythonProject$enclosure.coverage" NAME="enclosure Coverage Results" MODIFIED="1765956859348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />
     <SUITE FILE_PATH="coverage/PythonProject$book.coverage" NAME="book Coverage Results" MODIFIED="1764188793275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$GameOfLife_procedural.coverage" NAME="GameOfLife_procedural Coverage Results" MODIFIED="1768612259870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q54" />
-    <SUITE FILE_PATH="coverage/PythonProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1768612151651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q54bis" />
+    <SUITE FILE_PATH="coverage/PythonProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1768730712564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q54bis" />
     <SUITE FILE_PATH="coverage/PythonProject$Q51_test.coverage" NAME="Q51_test Coverage Results" MODIFIED="1761132696700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q51" />
-    <SUITE FILE_PATH="coverage/PythonProject$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1765995464524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />
+    <SUITE FILE_PATH="coverage/PythonProject$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1768689681545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q54mana-rj11" />
     <SUITE FILE_PATH="coverage/PythonProject$Q51_test_bis.coverage" NAME="Q51_test_bis Coverage Results" MODIFIED="1761033405469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1768517957523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q54" />
     <SUITE FILE_PATH="coverage/PythonProject$animal.coverage" NAME="animal Coverage Results" MODIFIED="1766011332045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q53" />
